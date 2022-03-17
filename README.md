@@ -69,7 +69,9 @@ Then:
 In the configuration options summary you should see that OpenCL was found and GPU mining
 was enabled. If it is not then OpenCL is not setup correctly and must be fixed before
 proceeding. Not all SBC's come with OpenCL setup and may not support OpenCL.
-The Hard Kernel Ubuntu images come with OpenCL setup.
+The Hard Kernel Ubuntu images come with OpenCL setup. Or try:
+
+    apt install ocl-icd-opencl-dev
 
 If the ARM Computer Vision and Machine Learning library is located in a different path 
 update `LDFLAGS` accordingly.
